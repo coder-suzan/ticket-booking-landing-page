@@ -1,0 +1,205 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Raleway", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, a, table{
+    font-family: "Inter", sans-serif;
+}
+
+.font-raleway{
+    font-family: "Raleway", sans-serif;
+}
+
+.font-inter{
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --primary-color: #1DD100;
+    --btn-bg-color: #e8fae5;
+}
+
+.hide_default_btn{
+    background-color: transparent;
+    color: #000;
+}
+
+.hide_default_btn:hover{
+    background-color: transparent;
+}
+
+.menu a:hover{
+    background-color: transparent;
+}
+
+.btn{
+    height: 2.5rem;
+    min-height: 2.5rem;
+}
+
+.custom_btn{
+    height: 2.3rem;
+    min-height: 2.3rem;
+    background-color: #e8fae5;
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+.offer_btn{
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.offer_btn:hover{
+    background-color: var(--primary-color) !important;
+    color: #fff !important;
+}
+
+.custom_btn img{
+  width: 18px;
+}
+
+.addDividerCircle{
+    position: relative;
+}
+
+.addDividerCircle::before{
+   content: ""; 
+    position: absolute;
+    background-color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    right: -55px;
+    top: -55px;
+}
+
+.addDividerCircle::after{
+    content: ""; 
+     position: absolute;
+     background-color: #fff;
+     width: 45px;
+     height: 45px;
+     border-radius: 100%;
+     right: -55px;
+     bottom: -55px;
+ }
+
+ .addDividerLine{
+    position: relative;
+ }
+
+ .addDividerLine::after{
+    content: "";
+    position: absolute;
+    width: 3px;
+    border-left: 2px dashed #fff;
+    height: 200px;
+    left: -33px;
+    top: -55px;
+ }
+
+
+ .coupon_inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+
+
+ .bus_info{
+    position: relative;
+ }
+
+ .bus_info::before{
+    content: ""; 
+     position: absolute;
+     background-color: #F7F8F8;
+     width: 45px;
+     height: 45px;
+     border-radius: 100%;
+     right: -55px;
+     top: -50px;
+ }
+ 
+ .bus_info::after{
+     content: ""; 
+      position: absolute;
+      background-color: #F7F8F8;
+      width: 45px;
+      height: 45px;
+      border-radius: 100%;
+      right: -55px;
+      bottom: -50px;
+  }
+
+ .bus_price{
+    position: relative;
+ }
+
+ .bus_price::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    border-left: 2px dashed var(--primary-color);
+    height: 245px;
+    left: 10px;
+    top: 9px;
+ }
+
+ /* Booking seat css*/
+ .seat_booking_seat{
+    font-family: "Inter", sans-serif;
+ }
+
+ .left_seat_letter  b{
+    padding: 10px;
+    color: #7b7d82;
+    margin-bottom: 15px;
+    text-align: center;
+ }
+
+ .left_seat_letter  b:last-child{
+    margin-bottom: 0;
+ }
+
+.seat_booking_seat{
+    display: grid;
+    grid-template-columns: 40px 1fr 1fr;
+    gap: 20px;
+}
+
+.purchase_seat{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.join_coupon__btn{
+    position: relative;
+}
+
+#coupon_apply{
+    position: absolute;
+    right: 5px;
+    top: 4px;
+}
+
+#savePrice{
+    display: none;
+}
+
+
+ @media screen and (max-width: 768px) {
+    .coupon_inner{
+       grid-template-columns: 1fr;
+     }
+
+     .bus_price::before{
+        border: none;
+     }
+}
+   
